@@ -18,7 +18,7 @@
         android:scaleType="fitXY"
         android:adjustViewBounds="true" />
 
-    <EditText
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/storyText"
@@ -40,7 +40,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#3a8aec" />
+        android:textColor="#3a8aec"
+        android:background="@android:color/white" />
 
     <Button
         android:layout_width="match_parent"
