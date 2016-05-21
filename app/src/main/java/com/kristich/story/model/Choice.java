@@ -11,6 +11,15 @@ public class Choice {
 
 
 
+    public Choice (String mText, int mNextPage) {
+
+        text = mText;
+
+        nextPage = mNextPage;
+
+    }
+
+
 
     public String getText() {
         return text;

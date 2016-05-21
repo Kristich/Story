@@ -13,6 +13,38 @@ public class Page {
 
     private Choice choice2;
 
+    private boolean isFinal = false;
+
+
+
+    public Page (int mImageId, String mText, Choice mChoice1, Choice mChoice2) {
+
+        imageId = mImageId;
+
+        text = mText;
+
+        choice1 = mChoice1;
+
+        choice2 = mChoice2;
+
+    }
+
+
+
+
+    public Page (int mImageId, String mText) {
+
+        imageId = mImageId;
+
+        text = mText;
+
+        choice1 = null;
+
+        choice2 = null;
+
+        isFinal = true;
+
+    }
 
 
 
@@ -46,5 +78,13 @@ public class Page {
 
     public void setChoice2(Choice choice2) {
         this.choice2 = choice2;
+    }
+
+    public boolean isFinal() {
+        return isFinal;
+    }
+
+    public void setFinal(boolean aFinal) {
+        isFinal = aFinal;
     }
 }
